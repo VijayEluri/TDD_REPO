@@ -156,18 +156,18 @@ public class SellTest {
                 add(new Transaction(100d, false));
                 add(new Transaction(10d, false));
             }
-            }, 220d, 110d);
+        }, 220d, 110d);
         sale.printReceipt(receipt);
-        //assertEquals("110 GP 100 G 10G", canvas.toString());
+        assertEquals("110 GP 100 G 10G", canvas.toString());
 
-        }
+    }
 
 
 
     @Before
     public void setup() {
         Display display = new PrintWriterDisplay(new PrintWriter(new StringWriter()));
-        TaxCalculator taxCalculator = new TaxCalculatorImpl();
+        TaxCalculator taxCalculator = new ProductTaxCalculator();
         Transaction.Payment payment = new Transaction.Payment(taxCalculator);
         sale = new Sale(display, payment, new MapCatalog(new HashMap<String, Product>() {
             {

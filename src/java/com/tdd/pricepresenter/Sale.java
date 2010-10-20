@@ -1,6 +1,7 @@
 package com.tdd.pricepresenter;
 
 import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.io.Writer;
 import java.util.List;
 
@@ -21,13 +22,14 @@ public class Sale {
             this.canvas = new PrintWriter(canvas, true);
             this.catalog = catalog;
             this.display = new PrintWriterDisplay(this.canvas);
-            this.payment = null;//todo Watch out!
+            this.payment = new Transaction.Payment(new ProductTaxCalculator());
         }
 
         public Sale(Display display, Transaction.Payment payment, Catalog catalog) {
             this.display = display;
             this.catalog = catalog;
-            this.canvas = null; //todo Watch out!
+            this.canvas = new PrintWriter(new StringWriter());
+
             this.payment = payment;
         }
 

@@ -7,7 +7,7 @@ package com.tdd.pricepresenter;
  * Time: 4:50:36 PM
  * To change this template use File | Settings | File Templates.
  */
-public class TaxCalculatorImpl implements TaxCalculator {
+public class ProductTaxCalculator implements TaxCalculator {
 
 
     public double calculate(double price, boolean isProvincial) {
