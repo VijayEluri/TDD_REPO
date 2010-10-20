@@ -13,9 +13,15 @@ public class Product {
 
     private double price;
 
-    private boolean isProvincial;
+    private String description;
 
-    
+    private  boolean isTaxApplied;
+
+    public Product(String code, double price, boolean isTaxApplied) {
+        this.code = code;
+        this.price = price;
+        this.isTaxApplied = isTaxApplied;
+    }
 
 
     public String getCode() {
@@ -34,11 +40,20 @@ public class Product {
         this.price = price;
     }
 
-    public boolean isProvincial() {
-        return isProvincial;
+
+    public String getDescription() {
+        return description;
     }
 
-    public void setProvincial(boolean provincial) {
-        isProvincial = provincial;
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public boolean isTaxApplied() {
+        return isTaxApplied;
+    }
+
+    public void setTaxApplied(boolean taxApplied) {
+        this.isTaxApplied = taxApplied;
     }
 }
