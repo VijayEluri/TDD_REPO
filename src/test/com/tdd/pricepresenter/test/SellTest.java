@@ -12,7 +12,7 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
-public class SellOneItemTest {
+public class SellTest {
 
     Sale sale;
 
