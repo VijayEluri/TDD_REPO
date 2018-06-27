@@ -24,4 +24,7 @@ public class MapCatalog implements Catalog {
         return productsByBarcode.get(barcode).getPrice();
     }
 
+    public void testMe() {
+        System.out.println("testMe");
+    }
 }

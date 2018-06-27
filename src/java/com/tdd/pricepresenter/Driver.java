@@ -18,15 +18,16 @@ public class Driver {
                 }));
 		sale.onBarcode("123");
 		sale.onBarcode("456");
-		sale.onBarcode("ksdjfhgla");
+		sale.onBarcode("cucu bau");
+        System.out.println("testez rebase");
 
         canvas.flush();
 
 
         sale.pay(new ArrayList<Product>(){
             {
-                new Product("456",7.95, true);
-                new Product("123",12.50, true);
+                new Product("Miha",7.95, true);
+                new Product("p2",12.50, true);
             }
         });
 	}
