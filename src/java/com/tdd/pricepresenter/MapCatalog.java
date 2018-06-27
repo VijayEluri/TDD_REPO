@@ -23,5 +23,8 @@ public class MapCatalog implements Catalog {
     public double lookupPrice(String barcode) {
         return productsByBarcode.get(barcode).getPrice();
     }
+    public void ihaveanothermethod(){
+        System.out.println("sdwoiueyfw");
+    }
 
 }
