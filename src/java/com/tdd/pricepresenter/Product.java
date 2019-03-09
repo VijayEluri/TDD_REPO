@@ -5,7 +5,7 @@ package com.tdd.pricepresenter;
  * User: miha
  * Date: Oct 18, 2010
  * Time: 10:35:00 PM
- * To change this template use File | Settings | File Templates.
+ * To change this template use Fie | Settings | File Templates.
  */
 public class Product {
 
