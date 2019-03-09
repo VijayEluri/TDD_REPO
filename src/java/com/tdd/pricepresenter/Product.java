@@ -17,8 +17,6 @@ public class Product {
 
     private  boolean isTaxApplied;
 
-    private String anotherTest;
-
     public Product(String code, double price, boolean isTaxApplied) {
         this.code = code;
         this.price = price;
