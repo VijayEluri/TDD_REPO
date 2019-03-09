@@ -56,4 +56,6 @@ public class Product {
     public void setTaxApplied(boolean taxApplied) {
         this.isTaxApplied = taxApplied;
     }
+
+    private void methodNotInBranch(){}
 }
